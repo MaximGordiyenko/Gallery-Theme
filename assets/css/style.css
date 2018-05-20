@@ -8,13 +8,17 @@ nav {
 nav img {
   margin-left: 70px;
 }
+nav button span {
+  background: #0c5460;
+}
 nav ul {
   list-style-type: none;
   display: flex;
   margin-left: auto;
+  padding: 0;
 }
 nav ul li {
-  margin: 10px 30px;
+  margin: 0 20px;
   text-align: center;
   width: 12%;
 }
@@ -25,5 +29,14 @@ nav ul li i {
 nav ul li a {
   text-decoration: none;
   color: #1b1e21;
+}
+.container .row .col-lg-10 .custom-file {
+  width: 50%;
+}
+.container .row .col-lg-10 .custom-file .custom-file-label {
+  height: 50px;
+}
+.container .row .col-lg-10 .custom-file .custom-file-label:after {
+  margin: 5px;
 }
 /*# sourceMappingURL=style.css.map */
