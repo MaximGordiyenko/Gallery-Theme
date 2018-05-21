@@ -1,4 +1,13 @@
 @path: "../image";
+@txt-bg: #B1ADAD;
+@btn-color: #FD6900;
+.social(@dib: inline-block; @wh: 25px; @br: 50%) {
+    display: @dib;
+    width: @wh;
+    height: @wh;
+    border-radius: @br;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -44,9 +53,63 @@ nav {
                 }
                 .custom-file-label {
                     height: 50px;
+                    padding: 12px;
+                    color: #dbe5ef;
                     &:after {
                         margin: 5px;
+                        border: none;
+                        padding: .375rem 1.25rem;
+                        background: #C1BEBE;
+                        color: white;
+                        font-weight: lighter;
+                        border-radius: 5px;
                     }
+                }
+            }
+            .btn-group {
+                margin-top: 18px;
+                color: white;
+                .btn {
+                    background: linear-gradient(#FD9B00, @btn-color);
+                    padding: 10px 50px;
+
+                }
+            }
+        }
+    }
+    .image {
+        margin-top: 50px;
+        .block {
+            border: 2px solid #adb5bd;
+            margin: 20px;
+            img {
+                width: 204px;
+                height: 198px;
+                //padding: 10px 0;
+            }
+            div:nth-of-type(1) {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0 0 10px;
+                color: @txt-bg;
+                border-bottom: 1px solid #ADB5BD;
+                span {
+                    .social();
+                    background: #FD9B00;
+                }
+            }
+            div:nth-of-type(2) {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                p {
+                    padding-left: 30px;
+                    color: @txt-bg;
+                }
+                span {
+                    .social();
+                    border: 1px solid @txt-bg - 30;
+                    background: @txt-bg;
                 }
             }
         }

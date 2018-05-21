@@ -35,8 +35,66 @@ nav ul li a {
 }
 .container .row .col-lg-10 .custom-file .custom-file-label {
   height: 50px;
+  padding: 12px;
+  color: #dbe5ef;
 }
 .container .row .col-lg-10 .custom-file .custom-file-label:after {
   margin: 5px;
+  border: none;
+  padding: .375rem 1.25rem;
+  background: #C1BEBE;
+  color: white;
+  font-weight: lighter;
+  border-radius: 5px;
+}
+.container .row .col-lg-10 .btn-group {
+  margin-top: 18px;
+  color: white;
+}
+.container .row .col-lg-10 .btn-group .btn {
+  background: linear-gradient(#FD9B00, #FD6900);
+  padding: 10px 50px;
+}
+.container .image {
+  margin-top: 50px;
+}
+.container .image .block {
+  border: 2px solid #adb5bd;
+  margin: 20px;
+}
+.container .image .block img {
+  width: 204px;
+  height: 198px;
+}
+.container .image .block div:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 0 10px;
+  color: #B1ADAD;
+  border-bottom: 1px solid #ADB5BD;
+}
+.container .image .block div:nth-of-type(1) span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FD9B00;
+}
+.container .image .block div:nth-of-type(2) {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.container .image .block div:nth-of-type(2) p {
+  padding-left: 30px;
+  color: #B1ADAD;
+}
+.container .image .block div:nth-of-type(2) span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #938f8f;
+  background: #B1ADAD;
 }
 /*# sourceMappingURL=style.css.map */
