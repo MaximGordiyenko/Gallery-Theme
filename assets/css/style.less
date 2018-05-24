@@ -29,9 +29,16 @@ nav {
         margin-left: auto;
         padding: 0;
         li {
-            margin: 0 20px;
+            margin: 0;
+            padding: 20px;
             text-align: center;
-            width: 12%;
+            width: 22%;
+            &:hover {
+                background: linear-gradient(#F8F8F8, #D5C2AE);
+                border-bottom: 4px solid @btn-color;
+                cursor: pointer;
+                text-decoration: none;
+            }
             i {
                 font-size: 20px;
                 padding-top: 15px;
@@ -46,9 +53,13 @@ nav {
 
 .container {
     .row {
-        .col-lg-10 {
+        .search-bar {
+            margin-top: 30px;
+            h1 {
+                font-size: 33px;
+            }
             .custom-file {
-                width: 50%;
+                width: 65%;
                 .custom-file-input {
                 }
                 .custom-file-label {
@@ -71,7 +82,7 @@ nav {
                 color: white;
                 .btn {
                     background: linear-gradient(#FD9B00, @btn-color);
-                    padding: 10px 50px;
+                    padding: 11px 35px;
 
                 }
             }
@@ -80,37 +91,87 @@ nav {
     .image {
         margin-top: 50px;
         .block {
-            border: 2px solid #adb5bd;
-            margin: 20px;
+            border: 1px solid #adb5bd;
+            margin: 15px 0;
+            padding: 7px 7px 0;
+            box-shadow: 0 0 6px 0 gray;
             img {
-                width: 204px;
-                height: 198px;
-                //padding: 10px 0;
+                width: 100%;
             }
             div:nth-of-type(1) {
                 display: flex;
                 justify-content: space-between;
-                padding: 10px 0 0 10px;
+                padding: 13px 5px 5px 20px;
                 color: @txt-bg;
                 border-bottom: 1px solid #ADB5BD;
+                h6 {
+                    padding-right: 5px;
+                    font-size: 15px;
+                }
                 span {
                     .social();
                     background: #FD9B00;
+                    color: white;
+                    &:after {
+                        content: "\2605";
+                        display: inline-block;
+                        position: relative;
+                        left: 5px;
+                        font-size: 17px;
+                    }
                 }
             }
             div:nth-of-type(2) {
                 display: flex;
                 justify-content: space-between;
                 margin-top: 10px;
+                padding: 0 3px 0 7px;
                 p {
-                    padding-left: 30px;
+                    padding: 0 5px 0 30px;
                     color: @txt-bg;
                 }
                 span {
                     .social();
                     border: 1px solid @txt-bg - 30;
                     background: @txt-bg;
+                    i {
+                        &:before {
+                            color: white;
+                            padding-left: 5px;
+                        }
+                    }
+                    &:nth-of-type(1) {
+                        &:hover {
+                            background: #58ebff;
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        &:hover {
+                            background: #2f25ff;
+                        }
+                    }
+                    &:nth-of-type(3) {
+                        &:hover {
+                            background: #ff3824;
+                        }
+                    }
+                    &:nth-of-type(4) {
+                        &:hover {
+                            background: #4570a9;
+                        }
+                    }
                 }
+            }
+        }
+        .copyright {
+            margin-left: auto;
+            width: 400px;
+            &:before {
+                content: "\00A9";
+                display: inline-block;
+                position: relative;
+                top: 2px;
+                left: 2px;
             }
         }
     }
