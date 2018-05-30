@@ -95,13 +95,28 @@ nav {
             margin: 15px 0;
             padding: 7px 7px 0;
             box-shadow: 0 0 6px 0 gray;
-            img {
+            &:hover:after {
+                content: url("@{path}/loop.png");
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 105px;
+                left: 105px;
+            }
+            .img-responsive {
                 width: 100%;
+            }
+            .data {
+                color: #d9d9d9;
+                position: relative;
+                top: -30px;
+                left: 10px;
             }
             div:nth-of-type(1) {
                 display: flex;
                 justify-content: space-between;
-                padding: 13px 5px 5px 20px;
+                padding: 0 5px 10px 20px;
                 color: @txt-bg;
                 border-bottom: 1px solid #ADB5BD;
                 h6 {
@@ -124,7 +139,7 @@ nav {
             div:nth-of-type(2) {
                 display: flex;
                 justify-content: space-between;
-                margin-top: 10px;
+                margin-top: 12px;
                 padding: 0 3px 0 7px;
                 p {
                     padding: 0 5px 0 30px;
@@ -166,12 +181,12 @@ nav {
         .copyright {
             margin-left: auto;
             width: 400px;
+            display: flex;
             &:before {
                 content: "\00A9";
                 display: inline-block;
                 position: relative;
-                top: 2px;
-                left: 2px;
+                left: -5px;
             }
         }
     }
