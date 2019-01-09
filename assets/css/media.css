@@ -1,0 +1,25 @@
+@media only screen and (max-width: 1024px) {
+  .container .image .block:hover:after {
+    top: 105px;
+    left: 105px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container .image .block:hover:after {
+    top: 105px;
+    left: 105px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container .image .block:hover:after {
+    top: 120px;
+    left: 130px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .container .image .block:hover:after {
+    top: 270px;
+    left: 285px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

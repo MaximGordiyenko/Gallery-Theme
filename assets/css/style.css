@@ -83,8 +83,8 @@ nav ul li a {
   width: 10px;
   height: 10px;
   position: absolute;
-  top: 105px;
-  left: 105px;
+  top: 125px;
+  left: 125px;
 }
 .container .image .block .img-responsive {
   width: 100%;
@@ -159,6 +159,8 @@ nav ul li a {
   margin-left: auto;
   width: 400px;
   display: flex;
+  margin-top: 50px;
+  color: #B1ADAD;
 }
 .container .image .copyright:before {
   content: "\00A9";
